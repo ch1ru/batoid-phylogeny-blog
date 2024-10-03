@@ -21,7 +21,6 @@ python3 scripts/prep_data.py -i data/Gene_table.csv -o output/PARTITION.nex
 
 ```shell
 iqtree2 -p PARTITION.nex
-# See IQ-Tree documentation at http://www.iqtree.org/doc/
 ```
 
 Output tree is in PARTITION.nex.iqtree 
@@ -29,4 +28,5 @@ Output tree is in PARTITION.nex.iqtree
 ## Links
 - My Medium [blog](https://medium.com/@ch1ru/phylogenetics-tutorial-reconstructing-batoid-phylogeny-from-dna-sequences-7b33fe70ee1b)
 - Original [paper](https://www.sciencedirect.com/science/article/abs/pii/S1055790311005252) by Naylor et al
+- IQ-Tree [documentation](IQ-Tree documentation at http://www.iqtree.org/doc/)
 
