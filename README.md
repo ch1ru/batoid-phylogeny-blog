@@ -17,6 +17,12 @@ conda env create -f environment.yml -y && conda activate naylor-batoidea
 python3 scripts/prep_data.py -i data/Gene_table.csv -o output/PARTITION.nex
 ```
 
+## Run IQ-Tree
+
+```shell
+iqtree2 -p PARTITION.nex
+```
+
 Output tree is in PARTITION.nex.iqtree 
 
 ## Links
