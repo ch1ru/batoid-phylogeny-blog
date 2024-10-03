@@ -1,0 +1,202 @@
+IQ-TREE 2.3.6 built Aug  4 2024
+
+Partition file name: PARTITION.nex
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 510069
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst. Biol., 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 42 taxa with 3 partitions and 23177 total sites (0% missing data)
+
+  ID	Type	Seq	Site	Unique	Infor	Invar	Const	Name
+   1	DNA	42	2499	1344	910	1248	1248	Rag1.nex
+   2	DNA	42	582	322	226	264	264	SCFD2.nex
+   3	DNA	42	20096	9599	7925	7737	7737	mtGenome.nex
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: TIM3+F+I+G4:Rag1.nex,TPM3+G4:SCFD2.nex,GTR+F+R5:mtGenome.nex
+
+List of best-fit models per partition:
+
+  ID  Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+   1  TIM3+F+I+G4      -20345.482   40708.965 + 6.95e-310   40709.037 + 6.38e-310   40761.378 +        0
+   2  TPM3+G4           -4802.823    9613.645 + 6.95e-310    9613.715 + 6.38e-310    9631.111 +        0
+   3  GTR+F+R5        -243992.989  488019.978 + 6.95e-310  488020.008 + 6.38e-310  488154.418 +        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Edge-linked-proportional partition model with separate substitution models and separate rates across sites
+
+  ID  Model           Speed  Parameters
+   1  TIM3+F+I+G4    0.1635  TIM3{1.43416,5.34479,7.67887}+F{0.316487,0.199765,0.230623,0.253125}+I{0.319384}+G4{1.44712}
+   2  TPM3+G4        0.1371  TPM3{1.97393,6.70751}+FQ+G4{0.752968}
+   3  GTR+F+R5       1.1290  GTR{2.55288,6.53455,2.15122,0.683333,15.2181}+F{0.299803,0.274112,0.127466,0.298619}+R5{0.358917,0.0191002,0.131598,0.273853,0.181199,0.81569,0.239986,1.74882,0.0883015,4.41229}
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -269138.2313 (s.e. 1949.3128)
+Unconstrained log-likelihood (without tree): -174409.5097
+Number of free parameters (#branches + #model parameters): 110
+Akaike information criterion (AIC) score: 538496.4626
+Corrected Akaike information criterion (AICc) score: 538497.5213
+Bayesian information criterion (BIC) score: 539382.0633
+
+Total tree length (sum of branch lengths): 10.2071
+Sum of internal branch lengths: 2.2282 (21.8299% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Chimaera' is drawn at root
+
++-----------------------------------------------------------Chimaera
+|
+|   +---------Squalus_acanthias
++---|
+|   |     +---------------Mitsukurina_owstoni
+|   |  +--|
+|   |  |  |   +---------------------------Scyliorhinus
+|   |  |  +---|
+|   |  |      +--------Mustelus
+|   +--|
+|      +-------Heterodontus
+|
+|                   +---------------------Cruriraja_hulleyi
+|                +--|
+|                |  |     +--------Bathyraja_parmifera
+|                |  |  +--|
+|                |  |  |  +------Pavoraja_nitida
+|                |  +--|
+|                |     +------Atlantoraja
+|      +---------|
+|      |         |     +--Amblyraja_radiata
+|      |         |  +--|
+|      |         |  |  +--Rajella_fyllae
+|      |         +--|
+|      |            +------Okamejei
++------|
+       |                                      +------Hypanus_dipterurus
+       |                                   +--|
+       |                                   |  |   +-----Neotrygon_kuhlii
+       |                                   |  +---|
+       |                                   |      +-----Taeniura_lymma
+       |                                +--|
+       |                                |  |  +---------Pastinachus_solocirostris
+       |                                |  +--|
+       |                                |     +-------------Urogymnus_asperrimus
+       |                             +--|
+       |                             |  |     +-------Potamotrygon_hystrix
+       |                             |  |  +--|
+       |                             |  |  |  +-----Styracura_schmardae
+       |                             |  +--|
+       |                             |     +--------Urobatis_halleri
+       |                          +--|
+       |                          |  |     +--------------Gymnura_crebripunctata
+       |                          |  |  +--|
+       |                          |  |  |  |  +-------Plesiobatis_daviesi
+       |                          |  |  |  +--|
+       |                          |  |  |     +------------Urolophus_cruciatus
+       |                          |  +--|
+       |                          |     |     +-----Mobula_japanica
+       |                          |     |  +--|
+       |                          |     |  |  +--Rhinoptera_steindachneri
+       |                          |     +--|
+       |                          |        +--------Myliobatis_australis
+       |                       +--|
+       |                       |  +--------------Aetobatus_ocellatus
+       |            +----------|
+       |            |          +-------------------------Hexatrygon_bickelli
+       |         +--|
+       |         |  +--------------------------------Zanobatus_schoenleinii
+       |      +--|
+       |      |  |          +------Pristis_clavata
+       |      |  |       +--|
+       |      |  |       |  +----------Glaucostegus_typus
+       |      |  |    +--|
+       |      |  |    |  |  +-------Rhina_ancylostoma
+       |      |  |    |  +--|
+       |      |  |    |     +----Rhynchobatus_djiddensis
+       |      |  +----|
+       |      |       +------Rhinobatos_glaucostigma
+       |   +--|
+       |   |  |   +--------Trygonorrhina_fasciata
+       |   |  +---|
+       |   |      +--------Zapteryx_exasperata
+       +---|
+           |                         +-------------Narcine_tasmaniensis
+           |                      +--|
+           |                      |  +----------Typhlonarke_aysoni
+           |  +-------------------|
+           |  |                   +----------Torpedo_macneilli
+           +--|
+              |        +----------Platyrhinoidis_triseriata
+              +--------|
+                       +---------Platyrhina_sinensis
+
+Tree in newick format:
+
+(Chimaera:0.9313605667,(Squalus_acanthias:0.1609157684,((Mitsukurina_owstoni:0.2528083216,(Scyliorhinus:0.4475054571,Mustelus:0.1497571911):0.0672380638):0.0468768496,Heterodontus:0.1394511150):0.0372174464):0.0742367366,(((Cruriraja_hulleyi:0.3467152525,((Bathyraja_parmifera:0.1435665686,Pavoraja_nitida:0.1091438351):0.0336485711,Atlantoraja:0.1214439673):0.0534746187):0.0413856895,((Amblyraja_radiata:0.0418594251,Rajella_fyllae:0.0431072064):0.0605184152,Okamejei:0.1094936266):0.0575365747):0.1583615878,((((((((((Hypanus_dipterurus:0.1160213891,(Neotrygon_kuhlii:0.0931578262,Taeniura_lymma:0.0994907591):0.0680257056):0.0278917257,(Pastinachus_solocirostris:0.1572795215,Urogymnus_asperrimus:0.2301606283):0.0187704159):0.0055447312,((Potamotrygon_hystrix:0.1263637814,Styracura_schmardae:0.0937299630):0.0537623776,Urobatis_halleri:0.1493516639):0.0243950420):0.0290026393,((Gymnura_crebripunctata:0.2463623536,(Plesiobatis_daviesi:0.1317416539,Urolophus_cruciatus:0.2113915837):0.0134098870):0.0102620324,((Mobula_japanica:0.1018994810,Rhinoptera_steindachneri:0.0554236757):0.0616272117,Myliobatis_australis:0.1410579931):0.0219531101):0.0074535918):0.0167341984,Aetobatus_ocellatus:0.2373990573):0.0264706525,Hexatrygon_bickelli:0.4092212858):0.1832904174,Zanobatus_schoenleinii:0.5169348752):0.0306059447,(((Pristis_clavata:0.1141934247,Glaucostegus_typus:0.1819208875):0.0152326292,(Rhina_ancylostoma:0.1360019566,Rhynchobatus_djiddensis:0.0901869317):0.0553305469):0.0177868043,Rhinobatos_glaucostigma:0.1202984069):0.0793379121):0.0248617373,(Trygonorrhina_fasciata:0.1529647167,Zapteryx_exasperata:0.1409626361):0.0687506301):0.0604133961,(((Narcine_tasmaniensis:0.2323545564,Typhlonarke_aysoni:0.1807814249):0.0149187970,Torpedo_macneilli:0.1772661645):0.3134688614,(Platyrhinoidis_triseriata:0.1793391483,Platyrhina_sinensis:0.1584958875):0.1462226687):0.0229023809):0.0631343427):0.1161368210);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t PARTITION.nex.treefile -p PARTITION.nex.best_model.nex
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s <alignment.phy> --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s <alignment.phy> --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Thu Oct  3 12:33:39 2024
+Total CPU time used: 502.912 seconds (0h:8m:22s)
+Total wall-clock time used: 504.46 seconds (0h:8m:24s)
+
