@@ -8,14 +8,15 @@ Code repository for phylogenetics tutorial on reconstructing batoid phylogeny.
 ## Setting environment:
 ```shell
 conda env create -f environment.yml -y && conda activate naylor-batoidea
+# You may wish to specify an output directory as an env variable then use in script. IQ-Tree generates many files in the same directory it is run in.
 ```
 ## Running scripts
 
 ```shell
-python3 scripts/prep_data.py -i /data/Gene_table.csv -o /output/PARTITION.nex
+python3 scripts/prep_data.py -i data/Gene_table.csv -o output/PARTITION.nex
 ```
 
-Output tree is in PARTITION.nex.iqtree
+Output tree is in PARTITION.nex.iqtree 
 
 ## Links
 - My Medium [blog](https://medium.com/@ch1ru/phylogenetics-tutorial-reconstructing-batoid-phylogeny-from-dna-sequences-7b33fe70ee1b)
