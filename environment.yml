@@ -1,0 +1,18 @@
+# environment.yml
+name: naylor-batoidea
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.10
+  - clustalw
+  - ncbi-acc-download
+  - biopython
+  - iqtree
+  - numpy
+  - pandas
+  - plotly
+variables:
+  VAR1: valueA
+  VAR2: valueB
