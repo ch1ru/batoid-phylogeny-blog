@@ -21,6 +21,7 @@ python3 scripts/prep_data.py -i data/Gene_table.csv -o output/PARTITION.nex
 
 ```shell
 iqtree2 -p PARTITION.nex
+# See IQ-Tree documentation at http://www.iqtree.org/doc/
 ```
 
 Output tree is in PARTITION.nex.iqtree 
