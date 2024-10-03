@@ -1,6 +1,6 @@
 # batoid-phylogeny-blog
 
-Code repository for phylogenetics tutorial on reconstructing batoid phylogeny. 
+Code repository for phylogenetics tutorial on reconstructing batoid phylogeny with IQ-Tree. 
 
 > [!NOTE]  
 > Purely for educational purposes, not an authoritative source about batoid evolution or phylogenetics.
