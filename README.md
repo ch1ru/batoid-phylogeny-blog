@@ -8,7 +8,8 @@ Code repository for phylogenetics tutorial on reconstructing batoid phylogeny.
 ## Setting environment:
 ```shell
 conda env create -f environment.yml -y && conda activate naylor-batoidea
-# You may wish to specify an output directory as an env variable then use in script. IQ-Tree generates many files in the same directory it is run in.
+# You may wish to specify an output directory as an env variable then use in script.
+# IQ-Tree generates many files in the same directory it is run in.
 ```
 ## Running scripts
 
